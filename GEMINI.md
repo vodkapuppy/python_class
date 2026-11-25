@@ -22,6 +22,7 @@
 > **虛擬環境與套件管理**：
 > **本專案統一使用「uv」作為虛擬環境與套件管理工具！**
 > - 套件安裝與管理：優先使用 `uv add <套件名>`、`uv remove <套件名>`。
+> - 套件文件同步：每當使用 `uv add <套件名>` 新增套件時，必須同步更新 `requirements.md`，確保文件紀錄與專案依賴（`pyproject.toml` / `uv.lock`）維持一致。
 > - 程式碼與筆記本執行：優先使用 `uv run python ...`、`uv run jupyter ...`。
 > - 環境同步：使用 `uv sync`。
 > - 避免推薦傳統原生 `pip install` 或手動啟用腳本，以維持專案依賴管理與 `pyproject.toml` / `uv.lock` 的一致性。
